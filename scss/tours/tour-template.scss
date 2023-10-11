@@ -1,0 +1,294 @@
+#israel, #usa, #austrailia, #new-zealand, #france, #egypt, #japan, #canada, #uae {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 140px;
+}
+
+#israel {
+    @include tour-template('../images/tours/israel/hero.jpg');
+}
+
+#usa {
+    @include tour-template('../images/tours/usa/hero.jpg');
+}
+
+#austrailia {
+    @include tour-template('../images/tours/austrailia/hero.jpg');
+}
+
+#new-zealand {
+    @include tour-template('../images/tours/new-zealand/hero.jpg');
+}
+
+#france {
+    @include tour-template('../images/tours/france/hero.jpg');
+}
+
+#egypt {
+    @include tour-template('../images/tours/egypt/hero.jpg');
+}
+
+#japan {
+    @include tour-template('../images/tours/japan/hero.jpg');
+}
+
+#canada {
+    @include tour-template('../images/tours/canada/hero.jpg');
+}
+
+#uae {
+    @include tour-template('../images/tours/uae/hero.jpg');
+}
+
+
+@media only screen 
+and (min-width: 320px)
+and (max-width: 387px) {
+
+    #israel, #usa, #austrailia, #new-zealand, #france, #egypt, #japan, #canada, #uae {
+        padding-top: 50px;
+            
+        .hero {
+            margin-top: 0;
+            width: 100%;
+            height: 150px;
+
+            h1 {
+                top: 15px;
+                left: 10px;
+                font-size: 36px;
+                line-height: 40px;
+            }
+
+            h5 {
+                bottom: -7px;
+                right: -1px;
+                font-size: 28px;
+                line-height: 32px;
+            }
+        }
+
+        .photos {
+            width: 80%;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            img { 
+                width: 100%;
+                height: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        .itinerary {
+            width: 80%;
+
+            .day {
+                width: 100%;
+
+                h2 {
+                    font-size: 36px;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            a {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 388px)
+and (max-width: 480px) {
+
+    #israel, #usa, #austrailia, #new-zealand, #france, #egypt, #japan, #canada, #uae {
+        padding-top: 50px;
+            
+        .hero {
+            margin-top: 0;
+            width: 100%;
+            height: 150px;
+
+            h1 {
+                top: 15px;
+                left: 10px;
+                font-size: 36px;
+                line-height: 40px;
+            }
+
+            h5 {
+                bottom: -7px;
+                right: -1px;
+                font-size: 28px;
+                line-height: 32px;
+            }
+        }
+
+        .photos {
+            width: 298px;
+            margin-bottom: 20px;
+
+            img {
+                margin-bottom: 30px;
+            }
+        }
+
+        .itinerary {
+            width: 80%;
+
+            .day {
+                width: 100%;
+
+                h2 {
+                    font-size: 36px;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            a {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 481px)
+and (max-width: 782px) {
+
+    #israel, #usa, #austrailia, #new-zealand, #france, #egypt, #japan, #canada, #uae {
+        padding-top: 0;
+            
+        .hero {
+            margin-top: 125px;
+            width: 80%;
+            height: 250px;
+
+            h1 {
+                top: 15px;
+                left: 10px;
+                font-size: 40px;
+                line-height: 45px;
+            }
+
+            h5 {
+                bottom: -7px;
+                right: -1px;
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+
+        .photos {
+            width: 298px;
+            margin-bottom: 20px;
+
+            img {
+                margin-bottom: 30px;
+            }
+        }
+
+        .itinerary {
+            width: 80%;
+
+            .day {
+                width: 100%;
+
+                h2 {
+                    font-size: 36px;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            a {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 783px)
+and (max-width: 1168px) {
+       
+    #israel, #usa, #austrailia, #new-zealand, #france, #egypt, #japan, #canada, #uae {
+        padding-top: 0;
+            
+        .hero {
+            margin-top: 125px;
+            width: 80%;
+            height: 350px;
+
+            h1 {
+                top: 15px;
+                left: 10px;
+                font-size: 40px;
+                line-height: 45px;
+            }
+
+            h5 {
+                bottom: -7px;
+                right: -1px;
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+
+        .photos {
+            width: 628px;
+            margin-bottom: 20px;
+
+            img {
+                margin-bottom: 30px;
+            }
+        }
+
+        .itinerary {
+            width: 80%;
+
+            .day {
+                width: 100%;
+
+                h2 {
+                    font-size: 36px;
+                    line-height: 40px;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            a {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

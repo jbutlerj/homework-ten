@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Proxima-Nova;
+    src: url(fonts/proxima-nova/Proxima-Nova-Extra-Condensed-Thin.otf);
+}
+
+@font-face {
+    font-family: Gills-Sans;
+    src: url(fonts/gill-sans/Gill-Sans.otf);
+}
+
+
+// wordmark-white
+.wordmark {
+    width: 92px;
+    height: 42px;
+    position: relative;
+    border: solid 2px #fff;
+
+    span {
+        position: absolute;
+        bottom: -5px;
+        left: -1px;
+        color: #fff;
+        font-family: Gill-Sans;
+        font-size: 20px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+}
+
+.wordmark-footer {
+    width: 92px;
+    height: 42px;
+    position: relative;
+    border: solid 2px #fff;
+
+    span {
+        position: absolute;
+        bottom: -5px;
+        left: -1px;
+        color: #fff;
+        font-family: Gill-Sans;
+        font-size: 20px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+}

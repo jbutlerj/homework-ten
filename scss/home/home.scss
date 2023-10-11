@@ -1,0 +1,608 @@
+.home {
+    width: 100%;
+
+    // hero section 
+    .hero {
+        width: 100%;
+        height: 500px;
+        background-image: url(../images/travel-fly-hero.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        
+        .callout{
+            width: 415px;
+            margin: 0 auto;
+            padding-top: 150px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .wordmark {
+                display: none;
+            }
+
+            h1 {
+                font-family: Proxima-Nova;
+                font-weight: 100;
+                letter-spacing: 1;
+                line-height: 73px;
+                font-size: 60px;
+                margin-bottom: 26px;
+            }
+
+            h4 {
+                font-family: Gill-Sans;
+                font-style: italic;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 23px;
+                font-size: 20px;
+                margin-bottom: 0px;
+            }
+
+            a {
+                text-decoration: none;
+
+                .read-more {
+                    width: 120px;
+                    height: 40px;
+                    margin: 50px auto 0 auto;
+                    background-color: #79ADDC;
+                    color: #fff;
+                    font-family: Gill-Sans;
+                    font-size: 15px;
+                    font-weight: 300;
+                    letter-spacing: 0;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    scale: 1;
+                    border: none;
+                    transition: all .3s;
+                }
+
+                .read-more:hover {
+                    scale: 1.05;
+                    border: solid 1px #fff;
+                }
+            }
+        }
+    }
+
+    // promos-trips section
+    .promo-trips {
+        margin-top: -43px;
+        min-height: 304px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .tile-container {
+            width: 818px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+                      
+            .trip-tile-1 {
+                @include trip-tile('../images/tours/israel/tile.jpg');
+            }
+
+            .trip-tile-2 {
+                @include trip-tile('../images/tours/usa/tile.jpg');
+            }
+
+            .trip-tile-3 {
+                @include trip-tile('../images/tours/austrailia/tile.jpg')
+            }
+        }
+    }
+
+    // booking section
+    .booking {
+        min-height: 400px;
+        padding-bottom: 50px;
+
+        .booking-wrapper {
+            max-width: 65%;
+            margin: 0 auto;
+
+            h1 {
+                font-family: Proxima-Nova;
+                font-weight: 300;
+                font-style: italic;
+                text-transform: uppercase;
+                letter-spacing: 0;
+                line-height: 73px;
+                font-size: 56px;
+                margin-bottom: 32px;
+                
+                span {
+                    font-size: 66px;
+                }
+            }
+
+            form {
+                font-family: Gill-Sans;
+                font-size: 18px;
+                line-height: 20px;
+                font-weight: 300;
+                letter-spacing: 0;
+                
+                .input-row {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                    .short-input {
+                        width: 40%;
+
+                        input {
+                            width: 100%;
+                            height: 58px;
+                            padding-left: 20px;
+                            font-family: Gill-Sans;
+                            font-size: 18px;
+                            line-height: 20px;
+                            font-weight: 300;
+                            letter-spacing: 0;
+                            border: solid 1px #79ADDC;
+                        }
+                    }
+
+                    .long-input {
+                        width: 58%;
+
+                        input {
+                            width: 100%;
+                            height: 58px;
+                            padding-left: 20px;
+                            font-family: Gill-Sans;
+                            font-size: 18px;
+                            line-height: 20px;
+                            font-weight: 300;
+                            letter-spacing: 0;
+                            border: solid 1px #79ADDC;
+                        }
+                    }
+                }
+
+                .date-row {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                    label {
+                        width: 15%;
+                    }
+
+                    input {
+                        width: 85%;
+                        height: 58px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        font-family: Gill-Sans;
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: 300;
+                        letter-spacing: 0;
+                        border: solid 1px #79ADDC;
+                    }
+                }
+
+                .dd-row {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .adult {
+                        width: calc((100%/3) - 40px);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        label {
+                            width: 50%;
+                        }
+
+                        select {
+                            width: 50%;
+                            height: 58px;
+                            padding-left: 20px;
+                            font-family: Gill-Sans;
+                            font-size: 18px;
+                            line-height: 20px;
+                            font-weight: 300;
+                            letter-spacing: 0;
+                            border: solid 1px #79ADDC;
+                        }
+                    }
+
+                    .children {
+                        width: calc((100%/3) - 40px);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        label {
+                            width: 50%;
+                        }
+
+                        select {
+                            width: 50%;
+                            height: 58px;
+                            padding-left: 20px;
+                            font-family: Gill-Sans;
+                            font-size: 18px;
+                            line-height: 20px;
+                            font-weight: 300;
+                            letter-spacing: 0;
+                            border: solid 1px #79ADDC;
+                        }
+                    }
+
+                    .rooms {
+                        width: calc((100%/3) - 40px);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        label {
+                            width: 50%;
+                        }
+                        
+                        select {
+                            width: 50%;
+                            height: 58px;
+                            padding-left: 20px;
+                            font-family: Gill-Sans;
+                            font-size: 18px;
+                            line-height: 20px;
+                            font-weight: 300;
+                            letter-spacing: 0;
+                            border: solid 1px #79ADDC;
+                        }
+                    }
+                }
+
+                .textarea {
+                    width: 100%;
+
+                    textarea {
+                        width: 100%;
+                        min-height: 150px;
+                        max-height: 200px;
+                        font-family: Gill-Sans;
+                        font-size: 18px;
+                        line-height: 20px;
+                        font-weight: 300;
+                        letter-spacing: 0;
+                        padding: 20px;
+                        border: solid 1px #79ADDC;
+                    }
+                }
+
+                .button-row {
+                    margin-top: 37px;
+                    
+                    a {
+                        text-decoration: none;
+
+                        .subBTN {
+                            background-color: #70addc;
+                            border-radius: 30px;
+                            color: #fff;
+                            padding: 21px 21px;
+                            font-family: Gill-Sans;
+                            font-size: 15px;
+                            line-height: 17px;
+                            font-weight: 300;
+                            letter-spacing: 0;
+                            text-transform: uppercase;
+                            text-align: center;
+                            scale: 1;
+                            border: none;
+                            transition: all .3s;
+                        }
+
+                        .subBTN:hover {
+                            scale: 1.05;
+                            border: solid 1px #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Smartphones
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 480px) {
+
+    .home {
+        .hero {
+            max-height: 300px;
+
+            .callout {
+                width: 75%;
+                padding-top: 80px;
+
+                .wordmark {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+
+                h1 {
+                    display: none;
+                }
+
+                h4 {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+
+                a {
+                    
+                    .read-more {
+                        margin: 20px auto;
+                    }
+                }
+            }
+        }
+
+        .promo-trips {
+            margin-top: 5%;
+
+            .tile-container {
+                flex-direction: column;
+
+                div {
+                    margin: 0 auto 20px auto;
+                }
+            }
+        }
+
+        .booking {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .booking-wrapper {
+                width: 100%;
+                margin: 0;
+
+
+                h1 {
+                    font-size: 36px;
+                    line-height: 42px;
+                    text-align: center;
+                    margin-bottom: 5%;
+
+                    span {
+                        font-size: 48px;
+                    }
+                }
+
+                form {
+                    width: 100%;
+
+                    .input-row {
+                        flex-direction: column;
+
+                        .short-input {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+    
+                        .long-input {
+                            width: 100%;   
+                        }
+                    }
+
+                    .date-row {
+                        flex-direction: column;
+                        
+                        label {
+                            width: 100%;
+                            text-align: center;
+                            padding-bottom: 2%;
+                        }
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+
+                    .dd-row {
+                        flex-direction: column;
+                        margin-bottom: 20px;
+
+                        .adult {
+                            width: 100%;
+                            flex-direction: column;
+                            margin-bottom: 20px;
+
+                            label{
+                                width: 100%;
+                                text-align: center;
+                                padding-bottom: 2%;
+                            }
+
+                            select {
+                                width: 100%;
+                            }
+                        }
+
+                        .children {
+                            width: 100%;
+                            flex-direction: column;
+                            margin-bottom: 20px;
+
+                            label{
+                                width: 100%;
+                                text-align: center;
+                                padding-bottom: 2%;
+                            }
+
+                            select {
+                                width: 100%;
+                            }
+                        }
+
+                        .rooms {
+                            width: 100%;
+                            flex-direction: column;
+
+                            label{
+                                width: 100%;
+                                text-align: center;
+                                padding-bottom: 2%;
+                            }
+
+                            select {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .button-row {
+                        margin: 10% 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 481px)
+and (max-width: 800px) {
+        
+    .home {
+        .promo-trips {
+            .tile-container {
+                flex-direction: column;
+
+                div {
+                    margin: 0 auto 20px auto;
+                }
+            }
+        }
+
+        .booking {
+            padding: 25px;
+
+            .booking-wrapper {
+                max-width: 90%;
+
+                form {
+                    width: 100%;
+
+                    .input-row {
+                        flex-direction: column;
+
+                        .short-input {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+    
+                        .long-input {
+                            width: 100%;   
+                        }
+                    }
+
+                    .date-row {
+                        
+                        label {
+                            width: 22%;
+                        }
+
+                        input {
+                            width: 78%;
+                        }
+                    }
+
+                    .dd-row {
+                        flex-direction: column;
+                        margin-bottom: 20px;
+
+                        .adult {
+                            width: 100%;
+                            margin-bottom: 20px;
+
+                            label{
+                                width: 22%;
+                            }
+
+                            select {
+                                width: 78%;
+                            }
+                        }
+
+                        .children {
+                            width: 100%;
+                            margin-bottom: 20px;
+
+                            label{
+                                width: 22%;
+                            }
+
+                            select {
+                                width: 78%;
+                            }
+                        }
+
+                        .rooms {
+                            width: 100%;
+
+                            label{
+                                width: 22%;
+                            }
+
+                            select {
+                                width: 78%;
+                            }
+                        }
+                    }
+
+                    .button-row {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 801px)
+and (max-width: 950px) {
+       
+    .home {
+        .promo-trips {
+            .tile-container {
+                width: 95%;
+            }
+        }
+
+        .booking {
+            .booking-wrapper {
+                max-width: 80%;
+            }
+        }
+    }
+}

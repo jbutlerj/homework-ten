@@ -1,0 +1,148 @@
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #79ADDC;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 31px;
+
+    .full-size {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .wordmark-container {
+            width: calc(100%/3);
+        }
+
+        .copyright {
+            width: calc(100%/3);
+            font-family: Gill-Sans;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0;
+            font-weight: 300;
+            text-align: center;
+            color: #fff;    
+        }
+
+        .socials {
+            width: calc(100%/3);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+    
+            a {
+                padding-left: 23px;
+                text-decoration: none;
+        
+                img {
+                    width: 23px;
+                    height: 23px;
+                    scale: 1;
+                    transition: all .3s;
+                }
+
+                img:hover {
+                    scale: 1.3;
+                }
+            }
+        }
+    }
+
+    .mobile {
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;    
+        
+        .top {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+               
+            .wordmark-container {
+                width: 50%;
+                height: 100%;
+                padding-top: 10px;
+            }
+
+            .socials {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+    
+                a {
+                    padding-left: 7px;
+                    text-decoration: none;
+        
+                    img {
+                        width: 23px;
+                        height: 23px;
+                        scale: 1;
+                        transition: all .3s;
+                    }
+    
+                    img:hover {
+                        scale: 1.3;
+                    }
+                }
+            }
+        }
+        
+        .bottom {
+            height: 20%;
+            width: 100%;            
+
+            .copyright {
+                width: 100%;
+                height: 100%;
+                font-family: Gill-Sans;
+                font-size: 10px;
+                line-height: 12px;
+                letter-spacing: 0;
+                font-weight: 200;
+                text-align: center;
+                color: #fff;    
+            }
+        }
+    }
+}
+
+
+// Smartphones
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 480px) {
+
+    footer {
+        padding: 5px 10px;
+
+        .full-size {
+            display: none;
+        }
+
+        .mobile {
+            display: flex;
+        }
+    }
+}
+
+// for assignment
+@media only screen 
+and (min-width: 481px)
+and (max-width: 800px) {
+    
+    footer {
+       padding-left: 25px;
+       padding-right: 25px;
+    }
+}

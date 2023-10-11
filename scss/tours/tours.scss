@@ -1,0 +1,129 @@
+.tours {
+    width: 100%;
+    margin: 150px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .hero {
+        width: 80%;
+        height: 200px;
+        background-image: linear-gradient(to right, rgba(0 , 0, 0, .5)), url(../images/tours-hero.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-family: Proxima-Nova;
+            font-size: 60px;
+            font-weight: 200;
+            line-height: 72px;
+            letter-spacing: 6px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .tour-grid {
+        width: 818px;
+        margin: 55px auto 45px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        
+        .trip-tile-1 {
+            @include trip-tile('../images/tours/israel/tile.jpg');
+        }
+
+        .trip-tile-2 {
+            @include trip-tile('../images/tours/usa/tile.jpg');
+        }
+
+        .trip-tile-3 {
+            @include trip-tile('../images/tours/austrailia/tile.jpg')
+        }
+
+        .trip-tile-4 {
+            @include trip-tile('../images/tours/new-zealand/tile.jpg');
+        }
+
+        .trip-tile-5 {
+            @include trip-tile('../images/tours/france/tile.jpg');
+        }
+
+        .trip-tile-6 {
+            @include trip-tile('../images/tours/egypt/tile.jpg')
+        }
+
+        .trip-tile-7 {
+            @include trip-tile('../images/tours/japan/tile.jpg');
+        }
+
+        .trip-tile-8 {
+            @include trip-tile('../images/tours/canada/tile.jpg');
+        }
+
+        .trip-tile-9 {
+            @include trip-tile('../images/tours/uae/tile.jpg')
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 320px)
+and (max-width: 480px) {
+       
+    .tours {
+        margin-top: 50px;
+
+        .hero {
+            width: 100%;
+            height: 150px;
+        }
+
+        .tour-grid {
+            margin: 20px auto 0px auto;
+            width: 236px;
+
+            .trip-tile-1, .trip-tile-2, .trip-tile-3, .trip-tile-4, .trip-tile-5, .trip-tile-6, .trip-tile-7, .trip-tile-8, .trip-tile-9 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 481px)
+and (max-width: 674px) {
+       
+    .tours {
+        margin-top: 125px;
+        
+        .tour-grid {
+            margin: 20px auto 0px auto;
+            width: 236px;
+
+            .trip-tile-1, .trip-tile-2, .trip-tile-3, .trip-tile-4, .trip-tile-5, .trip-tile-6, .trip-tile-7, .trip-tile-8, .trip-tile-9 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 675px)
+and (max-width: 1037px) {
+       
+    .tours {
+        .tour-grid {
+            margin: 55px auto 0px auto;
+            width: 527px;
+        }
+    }
+}

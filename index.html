@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="header-wrapper">
+      <!-- full size nav -->
+      <div class="nav-container">
+        <nav class="full-size">
+          <div class="wordmark"><span>travel-fly</span></div>
+          <div id="links" class="links">
+            <a id="home" href="#">home</a> <span class="pipe">|</span>
+            <a id="about" href="#">about</a>
+            <span class="pipe">|</span>
+            <a id="tours" href="#">tours</a> <span class="pipe">|</span>
+            <a id="specialOffers" href="#">special offers</a>
+            <span class="pipe">|</span>
+            <a id="blog" href="#">blog</a>
+            <span class="pipe">|</span>
+            <a id="contact" href="#">contact</a>
+          </div>
+        </nav>
+      </div>
+
+      <nav class="mobile">
+        <div class="wordmark"><span>travel-fly</span></div>
+        <div id="links" class="links">
+          <a id="home" href="#">
+            <div class="link-button"><span>home</span></div>
+          </a>
+          <a id="about" href="#">
+            <div class="link-button"><span>about</span></div>
+          </a>
+          <a id="tours" href="#">
+            <div class="link-button"><span>tours</span></div>
+          </a>
+          <a id="specialOffers" href="#">
+            <div class="link-button"><span>special offers</span></div>
+          </a>
+          <a id="blog" href="#">
+            <div class="link-button"><span>blog</span></div>
+          </a>
+          <a id="contact" href="#">
+            <div class="link-button"><span>contact</span></div>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="site-container">
+      <div id="app">
+        <!-- content provided via js -->
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <!-- full-size footer -->
+        <div class="full-size">
+          <div class="wordmark-container">
+            <div class="wordmark"><span>travel-fly</span></div>
+          </div>
+          <div class="copyright">
+            Copyright 2019 travel-fly. All rights reserved
+          </div>
+          <div class="socials">
+            <a href="#"
+              ><img src="images/facebook-icon.png" alt="Facebook"
+            /></a>
+            <a href="#"><img src="images/ig-icon.png" alt="Instagram" /></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
+          </div>
+        </div>
+
+        <!-- mobile footer -->
+        <div class="mobile">
+          <div class="top">
+            <div class="wordmark-container">
+              <div class="wordmark"><span>travel-fly</span></div>
+            </div>
+            <div class="socials">
+              <a href="#"
+                ><img src="images/facebook-icon.png" alt="Facebook"
+              /></a>
+              <a href="#"><img src="images/ig-icon.png" alt="Instagram" /></a>
+              <a href="#"
+                ><img src="images/twitter-icon.png" alt="Twitter"
+              /></a>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="copyright">
+              Copyright 2019 travel-fly. All rights reserved
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- javascript/jQuery -->
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script type="module" src="app/app.js"></script>
+    <script type="module" src="model/model.js"></script>
+  </body>
+</html>

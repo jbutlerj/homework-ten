@@ -1,0 +1,323 @@
+.offers {
+    width: 80%;
+    margin: 150px auto 100px auto;
+
+    h1 {
+        font-family: Proxima-Nova;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 200;
+        letter-spacing: 3px;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .offer-wrapper {
+        width: 70%;
+        display: flex;
+        margin-bottom: 60px;
+
+        .image {
+            width: 199px;
+            height: 287px;
+            margin-right: 20px;
+        }
+
+        .text-container {
+            position: relative;
+
+            .text-top {
+                height: 20%;
+            
+                h1 {
+                    .line {
+                        border-bottom: solid 2px #000;
+                    }
+
+                    .discount {
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #FF7D38;
+                        text-transform: none;
+                    }
+                }
+
+                h5 {
+                    display: none;
+                    font-family: Proxima-Nova;
+                    font-weight: 200;
+                    letter-spacing: 3px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FF7D38;
+                    text-transform: none;
+                    margin-bottom: 0;
+                }
+            }
+
+            .text-mid {
+                width: 50%;
+                height: 60%;
+
+                p {
+                    font-family: Gill-Sans;
+                    font-size: 16px;
+                    font-weight: 200;
+                    line-height: 18px;
+                    color: #000;
+                }
+            }
+
+            .button-container {
+                width: 133px;
+                height: 40px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                a {
+                    text-decoration: none;
+
+                    .deal-button {
+                        background-color: #70addc;
+                        border-radius: 20px;
+                        color: #fff;
+                        padding: 11px 16px;
+                        font-family: Gill-Sans;
+                        font-size: 15px;
+                        line-height: 17px;
+                        font-weight: 300;
+                        letter-spacing: 0;
+                        text-transform: uppercase;
+                        text-align: center;
+                        white-space: nowrap;
+                        scale: 1;
+                        border: none;
+                        transition: all .3s;
+                    }
+
+                    .deal-button:hover {
+                        scale: 1.05;
+                        border: solid 1px #fff;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// media queries
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 600px) {
+
+    .offers {
+        width: 90%;
+        margin-top: 75px;
+        margin-bottom: 50px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .offer-wrapper {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+
+            .image {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .text-container {
+
+                .text-top {
+
+                    h1 {
+                        text-align: center;
+                        margin-bottom: 10px;
+
+                        .gap {
+                            display: none;
+                        }
+                    
+                        .discount {
+                            display: none;
+                        }
+                    }
+
+                    h5 {
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .text-mid {
+                    width: 80%;
+                    margin: 0 auto 30px auto;
+                }
+
+                .button-container {
+                    position: relative;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 481px) 
+and (max-width: 600px) {
+
+    .offers {
+        width: 80%;
+        margin-top: 125px;
+        margin-bottom: 50px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .offer-wrapper {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+
+            .image {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .text-container {
+
+                .text-top {
+
+                    h1 {
+                        text-align: center;
+                        margin-bottom: 10px;
+
+                        .gap {
+                            display: none;
+                        }
+                    
+                        .discount {
+                            display: none;
+                        }
+                    }
+
+                    h5 {
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .text-mid {
+                    width: 80%;
+                    margin: 0 auto 30px auto;
+                }
+
+                .button-container {
+                    position: relative;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 601px) 
+and (max-width: 800px) {
+
+    .offers {
+        width: 80%;
+        margin-top: 125px;
+        margin-bottom: 50px;
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .offer-wrapper {
+            width: 100%;
+            margin-bottom: 40px;
+
+            .image {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .text-container {                
+
+                .text-top {
+                    height: 70px;
+                    margin-bottom: 10px;
+                    
+
+                    h1 {
+                        text-align: center;
+                        margin-bottom: 10px;
+
+                        .gap {
+                            display: none;
+                        }
+                    
+                        .discount {
+                            display: none;
+                        }
+                    }
+
+                    h5 {
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 15px;
+                    }
+                }
+
+                .text-mid {
+                    width: 90%;
+                    height: 45%;
+                    margin: 0 auto 0 auto;    
+                }
+
+                .button-container {
+                    height: 20%;
+                    position: relative;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                }
+            }
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 801px) 
+and (max-width: 1110px) {
+
+    .offers { 
+        margin-bottom: 75px;
+
+        .offer-wrapper {
+            width: 100%;
+
+            .text-container {
+                width: 100%;
+
+                .text-mid {
+                    width: 75%;
+                }
+            }
+        }
+    }
+}
